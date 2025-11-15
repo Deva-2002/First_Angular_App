@@ -5,12 +5,17 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   imports: [RouterOutlet],
   template: `
-    <h1>Welcome to {{ title() }}!</h1>
-
+    <h1>Welcome to :{{ title() }}!</h1>
+  <p>Just saying random things</p>
     <router-outlet />
   `,
-  styles: [],
+  styles: [`
+    p{
+     background-color:red
+    }
+    `],
 })
+
 export class App {
-  protected readonly title = signal('first_app');
+  title = signal('first_app');
 }
