@@ -9,7 +9,7 @@ import { Main } from "./componenet/main/main";
   template: `
     <h1>Welcome to :{{ title() }}!</h1>
   <p>Just saying random things</p>
-  <app-header/>
+  <app-header [about]=aboutMessage()/>
   <app-main/>
     <router-outlet />
   `,
@@ -22,4 +22,5 @@ import { Main } from "./componenet/main/main";
 
 export class App {
   title = signal('first_app');
+  aboutMessage=signal('AboutApp')
 }
