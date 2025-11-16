@@ -1,0 +1,21 @@
+header{
+    background-color:black;
+    color: white;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div{
+    padding: auto;
+}
+
+.right-div{
+    display: flex;
+    justify-content: space-around;
+}
