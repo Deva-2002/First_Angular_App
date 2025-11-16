@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './main.scss',
 })
 export class Main {
-
+  keyFuction(event: KeyboardEvent){
+    console.log(`the key pressed is ${event.key} key`)
+  }
 }
